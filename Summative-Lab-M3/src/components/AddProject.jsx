@@ -4,13 +4,13 @@ import Project from "./ProjectButton"
 
 function AddProject() {
     return (
-        <div>
+        <div id="addProject">
             <h2></h2>
-            <input name="Title" placeholder="Please Add Name of your Project" required></input>
-            <input name="Description" placeholder="Describe your project" required></input>
+            <input id="name" name="Title" placeholder="Please Add the Title of your Project" required></input>
+            <input id="description" name="Description" placeholder="Describe your project" required></input>
             <div>
-                <button onClick={AddLink()}>Add Links</button>
-                <button onClick={Project()}>Add Project</button>
+                <button onClick={AddLink}>Add Links</button>
+                <button onClick={Project}>Add Project</button>
             </div>
 
         </div>

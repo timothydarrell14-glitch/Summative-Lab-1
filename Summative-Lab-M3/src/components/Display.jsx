@@ -1,14 +1,15 @@
 // import React from "react";
-import Project from "./Button"
-import Search from "./SearchButton"
 
-function Display(){
+function SearchDisplay(){
+    function search(){
+
+    }
     return(
         <div>
             <div>
-                <button onClick={Project()}>Add Project</button>
+                {/* <button onClick={Project()}>Project</button> */}
                 <input name="Search" placeholder="Search for Project" required></input>
-                <button onClick={Search()}>Search</button>
+                <button onClick={search}>Search</button>
             </div>
             <div>
                 <h3>Title</h3>
@@ -18,4 +19,4 @@ function Display(){
     )
 }
 
-export default Display
+export default SearchDisplay
