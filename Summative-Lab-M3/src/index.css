@@ -70,7 +70,7 @@ nav button {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin: 12px;
-    background-color: #ffffff;
+    background-color: whitesmoke;
 }
 
 #addProject div {
@@ -157,7 +157,7 @@ nav button {
     padding: 20px;
     margin: 20px;
     border-radius: 20px;
-    background-color: #ffffff;
+    background-color: whitesmoke;
 }
 
 h3{
