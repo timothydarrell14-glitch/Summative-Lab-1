@@ -1,10 +1,12 @@
 // import React from "react";
 
 function AddLinks(){
-    let list = []
-
-    list.push()
-
-}
+        return(
+            <div>
+                <h3><input placeholder="Title of link"></input></h3>
+                <input name="link" placeholder="Link"></input>
+            </div>
+        )
+    }
 
 export default AddLinks

@@ -1,20 +1,17 @@
 // import React from "react";
 
-function SearchDisplay(){
-    function search(){
+function SearchDisplay() {
+    return (
+        <div id="search">
+            <div>
+                <h2>Projects</h2>
+            </div>
+            <div id="result">
+            <h3>Title<small>Date</small></h3>
+            <p>Description</p>
+        </div>
+            
 
-    }
-    return(
-        <div>
-            <div>
-                {/* <button onClick={Project()}>Project</button> */}
-                <input name="Search" placeholder="Search for Project" required></input>
-                <button onClick={search}>Search</button>
-            </div>
-            <div>
-                <h3>Title</h3>
-                <p>Description</p>
-            </div>
         </div>
     )
 }

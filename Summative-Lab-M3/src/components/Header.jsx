@@ -1,24 +1,21 @@
 // import React from "react";
-import Portfolio from "../assets/user-solid.png"
-import GitHub from "../assets/square-github-brands-solid.png"
-import Email from "../assets/envelope-solid.png"
-import Light from "../assets/moon-regular.png"
 
 function Header(props) {
-    function LightMode(){
 
+    function handleClick(){
+        
     }
     return (
         <header>
-            <h1><em>{props.name}</em></h1>
+            <h1>{props.name}</h1>
             <nav>
                 <ul>
-                    <li><a href={props.portfolio}>{Portfolio}</a></li>
-                    <li><a href="">{Email}</a></li>
-                    <li><a href="">{GitHub}</a></li>
+                    <li><a href={props.portfolio} target="_blank" >{props.user}</a></li>
+                    <li><a href="">{props.git}</a></li>
+                    <li><a href="">{props.mail}</a></li>
                 </ul>
+                <button onClick={handleClick}>{props.toggle}</button>
             </nav>
-            <button onClick={LightMode()}>{Light}</button>
         </header>
     )
 }

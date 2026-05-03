@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    max-width: 1500px;
+    scroll-behavior: smooth;
+    background-color:#00637C;;
+}
+
+#root {
+    background: #ffffff;
+    margin: 50px;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    background-color: wheat
+}
+
+h2 {
+    padding: 10px;
+    text-decoration: underline
+}
+
+header {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 20px
+}
+
+header h1 {
+    font-size: 28px;
+    font-size: 48px;
+    font-weight: 400;
+}
+
+nav {
+    display: flex;
+    gap: 16px;
+    margin-top: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    list-style: none;
+}
+
+nav a:hover {
+    transform: scale(1);
+    cursor: pointer;
+}
+
+nav button {
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+
+}
+
+#addProject {
+    text-align: center;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 12px;
+    background-color: #ffffff;
+}
+
+#addProject div {
+    padding: 12px;
+}
+
+#name {
+    padding: 12px 24px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+#name::placeholder {
+    text-align: center;
+}
+
+#name:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+#description {
+    width: 800px;
+    height: 200px;
+    border: whitesmoke;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+#addProject #description::placeholder {
+    text-align: center;
+}
+
+#addProject button {
+    cursor: pointer;
+    padding: 12px 24px;
+    border-radius: 20px;
+    border: none;
+    background-color: #f3f4f6;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#search {
+    text-align: center;
+    padding: 24px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin: 20px;
+}
+
+#search input {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+#search input::placeholder {
+    text-align: center;
+}
+
+#search button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    background-color: #f3f4f6;
+}
+
+#s-search {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+
+}
+
+#result {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    background-color: #ffffff;
+}
+
+h3{
+    padding: 8px;
+    margin: 12px;
+}
+p{
+    padding: 8px;
+    margin: 12px;
+}

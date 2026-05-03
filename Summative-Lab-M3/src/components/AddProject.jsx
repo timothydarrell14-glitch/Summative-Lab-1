@@ -1,16 +1,21 @@
-// import React from "react";
+// import React, {useState} from "react";
 import AddLink from "./AddLinks"
-import Project from "./ProjectButton"
 
 function AddProject() {
+
     return (
         <div id="addProject">
-            <h2></h2>
-            <input id="name" name="Title" placeholder="Please Add the Title of your Project" required></input>
-            <input id="description" name="Description" placeholder="Describe your project" required></input>
+            <h2>Create Project</h2>
+            
+                <div>
+                <input id="name" name="Title" placeholder="Title of your Project" required></input>
+            </div>
             <div>
-                <button onClick={AddLink}>Add Links</button>
-                <button onClick={Project}>Add Project</button>
+                <input id="description" name="Description" placeholder="Describe your project" required></input>
+            </div>
+            <div id="buttons">
+                <button onClick={AddLink}>Add Links</button><br></br>
+                {/* <button onClick={AddProject}>Add Project</button> */}
             </div>
 
         </div>
