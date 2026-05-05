@@ -39,25 +39,30 @@ header h1 {
     font-weight: 400;
 }
 
-nav {
+header ul{
     display: flex;
-    gap: 16px;
-    margin-top: 10px;
+    gap: 1rem;
 }
 
-nav a {
+header div{
+    display: flex;
+}
+
+header div li {
     text-decoration: none;
     color: black;
-    font-size: 14px;
-    list-style: none;
+    font-size: 24px;
+    list-style-type: none;
 }
 
-nav a:hover {
+.list:hover {
     transform: scale(1);
     cursor: pointer;
 }
 
-nav button {
+header button {
+    padding: 10px;
+    font-size: 24px;
     border-radius: 20px;
     border: none;
     cursor: pointer;
