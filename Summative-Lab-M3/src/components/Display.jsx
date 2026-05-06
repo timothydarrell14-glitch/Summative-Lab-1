@@ -1,6 +1,6 @@
 // import React from "react";
 
-function Display({ display }) {
+function Display({title, description }) {
     // console.log(list())
 
     // console.log(display.title)
@@ -14,8 +14,8 @@ function Display({ display }) {
 
             <div id="result">
 
-                <h3> Title: {display.title}<br /><small>05/05/2026</small></h3>
-                <p><strong>Description: </strong> <em>{display.description}</em></p>
+                <h3> Title: {title}<br></br><small>05/05/2026</small></h3>
+                <p><strong>Description: {description}</strong> <em></em></p>
 
             </div>
         </div >
