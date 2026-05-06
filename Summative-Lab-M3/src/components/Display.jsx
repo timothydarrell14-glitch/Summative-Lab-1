@@ -3,7 +3,7 @@
 function Display({ display }) {
     // console.log(list())
 
-    // console.log(display)
+    // console.log(display.title)
 
 
     return (
@@ -13,15 +13,9 @@ function Display({ display }) {
             </div>
 
             <div id="result">
-                {display.forEach((object, index) => {
 
-                    `<h3 id="${index}"> Title: ${object.title}<br /><small>05/05/2026</small></h3>
-                     <p><strong>Description: </strong> <em>${object.description}</em></p>`
-
-                    // console.log(object)
-                    // console.log(title)
-                    // console.log(description)
-                })}
+                <h3 id="${index}"> Title: {display.title}<br /><small>05/05/2026</small></h3>
+                <p><strong>Description: </strong> <em>{display.description}</em></p>
 
             </div>
         </div >
@@ -30,3 +24,4 @@ function Display({ display }) {
 }
 
 export default Display
+

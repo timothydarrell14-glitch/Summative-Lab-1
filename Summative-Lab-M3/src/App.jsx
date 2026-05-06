@@ -14,23 +14,41 @@ function App() {
 
   const [projects, setProjects] = useState(data)
 
-  let titles = []
+  // let titles = []
 
-  let descriptions = []
+  // let descriptions = []
 
-  projects.map((object) => {
-    titles.push(object.title)
-  })
+  // projects.map((object) => {
+  //   titles.push(object.title)
+  // })
 
-  projects.map((object) => {
-    descriptions.push(object.description)
-  })
+  // projects.map((object) => {
+  //   descriptions.push(object.description)
+  // })
+
+
+  // function list(projects) {
+  //   projects.forEach((object, index) => {
+
+  //     `<h3 id="${index}"> Title: ${object.title}<br /><small>05/05/2026</small></h3>
+  //                    <p id="${index}"><strong>Description: </strong> <em>${object.description}</em></p>`
+
+  //     // console.log(object)
+  //     // console.log(title)
+  //     // console.log(description)
+  //   })
+  // }
+
+  // console.log(list(projects))
+
+
+
 
   return (
     <div className="App">
       <Header name="Timothy Darrell" portfolio="https://summative-assesment-1.vercel.app/" git="https://github.com/timothydarrell14-glitch" />
       <AddProject projects={projects} setProjects={setProjects} />
-      <Display display={projects} titles={titles} descriptions={descriptions} />
+      { <Display display={projects[0]} /*titles={titles} descriptions={descriptions} list = {list}/> */ />}
     </div>
   )
 }
