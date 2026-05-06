@@ -42,13 +42,17 @@ function App() {
   // console.log(list(projects))
 
 
-
-
   return (
     <div className="App">
       <Header name="Timothy Darrell" portfolio="https://summative-assesment-1.vercel.app/" git="https://github.com/timothydarrell14-glitch" />
       <AddProject projects={projects} setProjects={setProjects} />
-      { <Display display={projects[0]} /*titles={titles} descriptions={descriptions} list = {list}/> */ />}
+        {projects.length === 0 ? (
+          <h3>No Project Found</h3>
+        ) : (
+          projects.map((object, index) => (
+            <Display key={index} title ={object.title} description = {object.description}/>
+          ))
+        )}
     </div>
   )
 }
