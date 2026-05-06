@@ -14,7 +14,7 @@ function Display({ display }) {
 
             <div id="result">
 
-                <h3 id="${index}"> Title: {display.title}<br /><small>05/05/2026</small></h3>
+                <h3> Title: {display.title}<br /><small>05/05/2026</small></h3>
                 <p><strong>Description: </strong> <em>{display.description}</em></p>
 
             </div>
