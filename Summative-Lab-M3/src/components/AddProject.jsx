@@ -8,6 +8,7 @@ function AddProject({setProjects}) {
 
     function handleClick(){
         setProjects(prev => [...prev, {title: name, description: description}])
+        alert("Project Added")
         setName("")
         setDescription("")
     }
@@ -23,7 +24,6 @@ function AddProject({setProjects}) {
                 <input id="description" name="description" placeholder="Describe your project" required value={description} onChange={(e) => setDescription(e.target.value)}/>
             </div>
             <div id="buttons">
-                {/* <button>Add Links</button><br></br> */}
                 <button onClick={handleClick}>Add Project</button>
             </div>
 

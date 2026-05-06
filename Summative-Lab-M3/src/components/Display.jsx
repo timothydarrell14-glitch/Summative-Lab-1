@@ -1,6 +1,9 @@
 // import React from "react";
 
 function Display({ display }) {
+    // console.log(list())
+
+    // console.log(display)
 
 
     return (
@@ -9,19 +12,16 @@ function Display({ display }) {
                 <h2>Projects</h2>
             </div>
 
-            <div id="result" >
+            <div id="result">
+                {display.forEach((object, index) => {
 
-                {display.forEach((object) => {
-                    return (
-                        <>
-                        <h3>{object.title}</h3>
-                        <p><strong>Description: </strong> <em>{object.description}</em></p>
-                        </>
-                    )
+                    `<h3 id="${index}"> Title: ${object.title}<br /><small>05/05/2026</small></h3>
+                     <p><strong>Description: </strong> <em>${object.description}</em></p>`
+
+                    // console.log(object)
+                    // console.log(title)
+                    // console.log(description)
                 })}
-
-                <h3> Title: <br /><small>05/05/2026</small></h3>
-                <p><strong>Description: </strong> <em></em></p>
 
             </div>
         </div >
