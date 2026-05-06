@@ -1,6 +1,6 @@
 // import React from "react";
 
-function Display({title, description }) {
+function Display({title, description}) {
     // console.log(list())
 
     // console.log(display.title)
@@ -8,14 +8,11 @@ function Display({title, description }) {
 
     return (
         <div id="search">
-            <div>
-                <h2>Projects</h2>
-            </div>
-
             <div id="result">
 
-                <h3> Title: {title}<br></br><small>05/05/2026</small></h3>
-                <p><strong>Description: {description}</strong> <em></em></p>
+                <h2>Project</h2>
+                <h3>{title}<br></br><small>05/05/2026</small></h3>
+                <p><strong>Description: </strong> <em>{description}</em></p>
 
             </div>
         </div >

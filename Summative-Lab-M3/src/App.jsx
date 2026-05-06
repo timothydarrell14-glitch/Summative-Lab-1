@@ -6,41 +6,9 @@ import AddProject from "./components/AddProject"
 
 let data = [{ "title": "Morning Routine", "description": "Start your day with a consistent routine to boost productivity and mental clarity." }, { "title": "Healthy Eating", "description": "Incorporate balanced meals with fruits, vegetables, and proteins for better health." }, { "title": "Exercise Daily", "description": "Engage in at least 30 minutes of physical activity to stay fit and energized." }, { "title": "Time Management", "description": "Plan your tasks effectively to maximize efficiency and reduce stress." }, { "title": "Learning New Skills", "description": "Continuously improve yourself by learning new skills and expanding your knowledge." }, { "title": "Financial Planning", "description": "Manage your finances wisely by budgeting, saving, and investing." }, { "title": "Mindfulness", "description": "Practice mindfulness and meditation to enhance focus and emotional well-being." }, { "title": "Social Connections", "description": "Build and maintain meaningful relationships with family and friends." }, { "title": "Career Growth", "description": "Set career goals and work consistently towards achieving them." }, { "title": "Work-Life Balance", "description": "Maintain a balance between professional responsibilities and personal life." }]
 
-// console.log(titles)
-// console.log(descriptions)
-
-
 function App() {
 
   const [projects, setProjects] = useState(data)
-
-  // let titles = []
-
-  // let descriptions = []
-
-  // projects.map((object) => {
-  //   titles.push(object.title)
-  // })
-
-  // projects.map((object) => {
-  //   descriptions.push(object.description)
-  // })
-
-
-  // function list(projects) {
-  //   projects.forEach((object, index) => {
-
-  //     `<h3 id="${index}"> Title: ${object.title}<br /><small>05/05/2026</small></h3>
-  //                    <p id="${index}"><strong>Description: </strong> <em>${object.description}</em></p>`
-
-  //     // console.log(object)
-  //     // console.log(title)
-  //     // console.log(description)
-  //   })
-  // }
-
-  // console.log(list(projects))
-
 
   return (
     <div className="App">
